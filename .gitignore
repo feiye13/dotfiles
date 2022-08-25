@@ -1,0 +1,14 @@
+# 先忽略所有文件
+*
+
+!.gitignore
+
+!README.md
+
+!.vim/
+!vimrc
+
+!nvim/
+!init.vim
+
+
