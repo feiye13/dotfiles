@@ -3,3 +3,34 @@
 
 # Control specified files
 !.gitignore
+!.stow-local-ignore
+
+!.zshenv
+!.zshrc
+
+!etc/
+!etc/keyd/
+!etc/keyd/default.conf
+
+!.config/
+!.config/microsoft-edge-stable-flags.conf
+!.config/spotify-launcher.conf
+
+!.config/emacs/
+!.config/emacs/README.md
+!.config/emacs/init.el
+!.config/emacs/early-init.el
+!.config/emacs/lisp/
+!.config/emacs/lisp/*
+
+!.config/foot/
+!.config/foot/foot.ini
+
+!.config/nvim/
+!.config/nvim/init.lua
+
+!.config/shell/
+!.config/shell/alias.sh
+
+!.config/vim/
+!.config/vim/vimrc
