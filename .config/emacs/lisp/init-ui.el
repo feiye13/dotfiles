@@ -15,11 +15,12 @@
 (add-hook 'emacs-startup-hook
           (lambda ()
             (custom-set-faces
-             '(default ((t (:family "LXGW WenKai Mono" :height 160 :weight Medium))))
+             '(default ((t (:family "LXGW WenKai Mono" :height 180 :weight Medium))))
              )))
 
-(when (daemonp) (load-theme 'modus-operandi-tinted))
-(when (display-graphic-p) (load-theme 'modus-operandi-tinted))
+(use-package doom-themes
+  :config
+  (load-theme 'doom-oksolar-dark t))
 
 (provide 'init-ui)
 ;;; init-ui.el ends here
