@@ -7,6 +7,11 @@
   :init
   (vertico-mode))
 
+(use-package vertico-posframe
+  :after vertico
+  :config
+  (vertico-posframe-mode 1))
+
 (use-package orderless
   :custom
   (completion-styles '(orderless basic))
