@@ -18,9 +18,7 @@
              '(default ((t (:family "LXGW WenKai Mono" :height 180 :weight Medium))))
              )))
 
-(use-package doom-themes
-  :config
-  (load-theme 'doom-oksolar-dark t))
+(load-theme 'modus-operandi-tinted)
 
 (provide 'init-ui)
 ;;; init-ui.el ends here
