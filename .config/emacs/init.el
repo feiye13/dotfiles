@@ -17,6 +17,7 @@
 (require 'init-meow)
 (require 'init-tools)
 (require 'init-dev)
+(require 'init-vc)
 
 (provide 'init)
 ;;; init.el ends here
