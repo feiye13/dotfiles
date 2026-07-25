@@ -18,6 +18,8 @@
              '(default ((t (:family "LXGW WenKai Mono" :height 180 :weight Medium))))
              )))
 
+(setq redisplay-skip-fontification-on-input t)
+
 (load-theme 'modus-operandi-tinted)
 
 (provide 'init-ui)
