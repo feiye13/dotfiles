@@ -17,6 +17,7 @@
   (corfu-auto-prefix 2))
 
 (use-package eglot
+  :ensure nil
   :hook
   (prog-mode . eglot-ensure)
   :bind
