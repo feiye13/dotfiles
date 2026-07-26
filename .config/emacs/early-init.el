@@ -21,6 +21,8 @@
 (push '(tool-bar-lines . 0) default-frame-alist)
 (push '(vertical-scroll-bars) default-frame-alist)
 
+(load-theme 'modus-operandi-tinted)
+
 ;; Set the scaling mode to avoid gaps after maximizing the window.
 (setq frame-resize-pixelwise t)
 

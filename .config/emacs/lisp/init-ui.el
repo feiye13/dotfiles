@@ -20,7 +20,5 @@
 
 (setq redisplay-skip-fontification-on-input t)
 
-(load-theme 'modus-operandi-tinted)
-
 (provide 'init-ui)
 ;;; init-ui.el ends here
