@@ -10,9 +10,6 @@
             (setq gc-cons-threshold (* 128 1024 1024)
                   gc-cons-percentage 0.1)))
 
-(setq read-process-output-max (* 4 1024 1024))
-(setq process-adaptive-read-buffering nil)
-
 (setq package-enable-at-startup nil)
 
 (prefer-coding-system 'utf-8)
