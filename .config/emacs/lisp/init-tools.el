@@ -39,5 +39,15 @@
   :bind
   (("C-," . fanyi-dwim)))
 
+(use-package undo-tree
+ :ensure t
+ :init (global-undo-tree-mode)
+ :custom
+ (undo-tree-auto-save-history nil))
+
+(use-package rainbow-delimiters
+ :ensure t
+ :hook (prog-mode . rainbow-delimiters-mode))
+
 (provide 'init-tools)
 ;;; init-tools.el ends here
