@@ -6,9 +6,9 @@
 (require 'package)
 (require 'use-package)
 
-(setq package-archives '(("gnu" . "https://mirrors.nju.edu.cn/elpa/gnu/")
-                         ("melpa" . "https://mirrors.nju.edu.cn/elpa/melpa/")
-                         ("nongnu" . "https://mirrors.nju.edu.cn/elpa/nongnu/")))
+(setq package-archives '(("gnu" . "https://mirrors.cernet.edu.cn/elpa/gnu/")
+                         ("melpa" . "https://mirrors.cernet.edu.cn/elpa/melpa/")
+                         ("nongnu" . "https://mirrors.cernet.edu.cn/elpa/nongnu/")))
 
 (package-initialize)
 
