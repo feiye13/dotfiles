@@ -4,7 +4,9 @@
 ;;; Code:
 
 (use-package magit
-  :bind ("C-x g" . magit-status))
+  :bind ("C-x g" . magit-status)
+  :config
+  (add-hook 'magit-mode-hook (lambda () (meow-mode -1))))
 
 (provide 'init-vc)
 ;;; init-vc.el ends here
