@@ -3,8 +3,6 @@
 
 ;;; Code:
 
-(add-to-list 'load-path "~/.config/emacs/lisp/")
-
 (setq custom-file (locate-user-emacs-file "custom.el"))
 (when (file-exists-p custom-file)
     (load custom-file))
