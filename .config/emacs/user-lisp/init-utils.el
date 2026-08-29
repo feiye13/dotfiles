@@ -1,4 +1,4 @@
-;;; init-tools.el -*- lexical-binding: t -*-
+;;; init-utils.el -*- lexical-binding: t -*-
 ;;; Commentary:
 
 ;;; Code:
@@ -49,5 +49,5 @@
  :ensure t
  :hook (prog-mode . rainbow-delimiters-mode))
 
-(provide 'init-tools)
-;;; init-tools.el ends here
+(provide 'init-utils)
+;;; init-utils.el ends here

@@ -13,7 +13,7 @@
 
 (require 'init-ui)
 (require 'init-meow)
-(require 'init-tools)
+(require 'init-utils)
 (require 'init-dev)
 (require 'init-vc)
 

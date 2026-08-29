@@ -25,7 +25,7 @@
 !.config/emacs/user-lisp/init-dev.el
 !.config/emacs/user-lisp/init-meow.el
 !.config/emacs/user-lisp/init-package.el
-!.config/emacs/user-lisp/init-tools.el
+!.config/emacs/user-lisp/init-utils.el
 !.config/emacs/user-lisp/init-ui.el
 !.config/emacs/user-lisp/init-vc.el
 
