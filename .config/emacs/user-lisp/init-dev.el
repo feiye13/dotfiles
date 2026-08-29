@@ -29,10 +29,9 @@
   :init
   (yas-global-mode 1))
 
-;;; treesit-auto
-(use-package treesit-auto
-  :config
-  (global-treesit-auto-mode))
+;;; treesit
+(setopt treesit-auto-install-grammar 'always)
+(setopt treesit-enabled-modes t)
 
 ;;; c-ts-mode
 (use-package c-ts-mode
