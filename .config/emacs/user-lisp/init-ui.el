@@ -15,12 +15,17 @@
 (add-hook 'emacs-startup-hook
           (lambda ()
             (custom-set-faces
-             '(default ((t (:family "LXGW WenKai Mono" :height 180 :weight Medium))))
+             '(default ((t (:family "LXGW WenKai Mono" :height 160 :weight Medium))))
              )))
 
 (setq redisplay-skip-fontification-on-input t)
 
-(load-theme 'modus-operandi-tinted)
+(if (daemonp)
+    (add-hook 'after-make-frame-functions
+              (lambda (frame)
+                (select-frame frame)
+                (load-theme 'modus-operandi-tinted)))
+  (load-theme 'modus-operandi-tinted))
 
 (provide 'init-ui)
 ;;; init-ui.el ends here
