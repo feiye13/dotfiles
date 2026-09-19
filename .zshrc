@@ -33,7 +33,9 @@ compinit
 zstyle ':completion:*' menu select
 zstyle ':completion::complete:*' gain-privileges 1
 
-export EDITOR=vim
+export ALTERNATE_EDITOR=""
+export EDITOR="emacsclient -t"
+export VISUAL="emacsclient -c"
 
 [ -f "$HOME/.config/shell/alias.sh" ] && . "$HOME/.config/shell/alias.sh"
 

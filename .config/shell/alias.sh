@@ -15,3 +15,7 @@ alias du="du --all --human-readable --max-depth=1"
 alias uname="uname --all"
 
 alias vi="vim"
+
+alias ecc="emacsclient -c"
+alias ect="emacsclient -t"
+alias ecer="emacsclient -e '(restart-emacs)'"
