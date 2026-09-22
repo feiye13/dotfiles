@@ -10,6 +10,7 @@
 (setq display-line-numbers-type 'relative)
 (global-hl-line-mode t) ;; 高亮光标所在行
 
+(setq-default mode-line-format nil)
 
 ;; Font
 (add-hook 'emacs-startup-hook
