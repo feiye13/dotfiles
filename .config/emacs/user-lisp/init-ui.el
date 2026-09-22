@@ -27,5 +27,15 @@
                 (load-theme 'modus-operandi-tinted)))
   (load-theme 'modus-operandi-tinted))
 
+(use-package awesome-tray
+  :vc (:url "https://github.com/manateelazycat/awesome-tray.git" :rev :newest)
+  :custom
+  (awesome-tray-active-modules '("location" "belong" "meow" "file-path" "mode-name" "git" "date"))
+  (awesome-tray-info-padding-right 1)
+  :config
+  (if (daemonp)
+      (add-hook 'server-after-make-frame-hook #'awesome-tray-mode)
+    (awesome-tray-mode 1)))
+
 (provide 'init-ui)
 ;;; init-ui.el ends here
