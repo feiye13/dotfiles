@@ -17,5 +17,8 @@
 
 (setq use-package-always-ensure t)
 
+(advice-add 'vc-git-clone :around
+            'my/vc-git-clone)
+
 (provide 'init-package)
 ;;; init-package.el ends here

@@ -21,6 +21,7 @@
 !.config/emacs/init.el
 !.config/emacs/early-init.el
 !.config/emacs/user-lisp/
+!.config/emacs/user-lisp/init-custom.el
 !.config/emacs/user-lisp/init-base.el
 !.config/emacs/user-lisp/init-dev.el
 !.config/emacs/user-lisp/init-meow.el
