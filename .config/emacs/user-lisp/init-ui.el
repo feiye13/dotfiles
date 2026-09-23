@@ -10,8 +10,6 @@
 (setq display-line-numbers-type 'relative)
 (global-hl-line-mode t) ;; 高亮光标所在行
 
-(setq-default mode-line-format nil)
-
 ;; Font
 (add-hook 'emacs-startup-hook
           (lambda ()
@@ -36,7 +34,12 @@
   :config
   (if (daemonp)
       (add-hook 'server-after-make-frame-hook #'awesome-tray-mode)
-    (awesome-tray-mode 1)))
+    (awesome-tray-mode 1))
+
+  (unless (display-graphic-p)
+      (add-hook 'after-change-major-mode-hook
+              (lambda ()
+                (mode-line-invisible-mode 1)))))
 
 (provide 'init-ui)
 ;;; init-ui.el ends here
