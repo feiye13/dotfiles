@@ -16,6 +16,7 @@ alias uname="uname --all"
 
 alias vi="vim"
 
+alias enw="emacs --no-window-system"
 alias ecc="emacsclient -c"
 alias ect="emacsclient -t"
-alias ecer="emacsclient -e '(restart-emacs)'"
+alias ers="systemctl --user restart emacs.service"
