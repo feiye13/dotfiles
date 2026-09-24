@@ -49,5 +49,13 @@
  :ensure t
  :hook (prog-mode . rainbow-delimiters-mode))
 
+(use-package ghostel
+  :bind (("C-c t" . ghostel)
+         :map ghostel-semi-char-mode-map
+         ("C-s"  . consult-line))
+  :hook (ghostel-mode . (lambda () (display-line-numbers-mode -1)))
+  :config
+  (add-to-list 'ghostel-eval-cmds '("magit-status-setup-buffer" magit-status-setup-buffer)))
+
 (provide 'init-utils)
 ;;; init-utils.el ends here
