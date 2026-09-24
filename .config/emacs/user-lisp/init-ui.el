@@ -19,27 +19,17 @@
 
 (setq redisplay-skip-fontification-on-input t)
 
-(if (daemonp)
-    (add-hook 'after-make-frame-functions
-              (lambda (frame)
-                (select-frame frame)
-                (load-theme 'modus-operandi-tinted)))
-  (load-theme 'modus-operandi-tinted))
-
-(use-package awesome-tray
-  :vc (:url "https://github.com/manateelazycat/awesome-tray.git" :rev :newest)
-  :custom
-  (awesome-tray-active-modules '("location" "belong" "meow" "file-path" "mode-name" "git" "date"))
-  (awesome-tray-info-padding-right 1)
+;; Theme
+(use-package catppuccin-theme
   :config
+  (setq catppuccin-flavor 'frappe)
   (if (daemonp)
-      (add-hook 'server-after-make-frame-hook #'awesome-tray-mode)
-    (awesome-tray-mode 1))
+      (add-hook 'server-after-make-frame-hook #'catppuccin-reload)
+    (load-theme 'catppuccin :no-confirm)))
 
-  (unless (display-graphic-p)
-      (add-hook 'after-change-major-mode-hook
-              (lambda ()
-                (mode-line-invisible-mode 1)))))
+;; modeline
+(use-package doom-modeline
+  :init (doom-modeline-mode 1))
 
 (provide 'init-ui)
 ;;; init-ui.el ends here
