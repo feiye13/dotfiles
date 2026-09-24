@@ -8,16 +8,11 @@
   (load custom-file))
 
 (require 'init-custom)
-
 (require 'init-package)
-
 (require 'init-base)
-
 (require 'init-ui)
-(require 'init-meow)
 (require 'init-utils)
 (require 'init-dev)
-(require 'init-vc)
 
 (provide 'init)
 ;;; init.el ends here

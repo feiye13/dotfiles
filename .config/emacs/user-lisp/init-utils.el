@@ -3,6 +3,23 @@
 
 ;;; Code:
 
+;; Meow
+(use-package meow
+  :config
+  (meow-setup)
+
+  (setopt meow-mode-state-list
+          (append '((magit-mode . motion)
+                    (ghostel-mode . insert)
+                    (git-commit-mode . motion))
+                  meow-mode-state-list))
+
+  (meow-global-mode 1))
+
+;; magit
+(use-package magit
+  :bind ("C-x g" . magit-status))
+
 (use-package vertico
   :init
   (vertico-mode))
@@ -40,13 +57,11 @@
   (("C-," . fanyi-dwim)))
 
 (use-package undo-tree
- :ensure t
  :init (global-undo-tree-mode)
  :custom
  (undo-tree-auto-save-history nil))
 
 (use-package rainbow-delimiters
- :ensure t
  :hook (prog-mode . rainbow-delimiters-mode))
 
 (use-package ghostel
