@@ -5,6 +5,8 @@
 
 ;; Cursor
 (blink-cursor-mode -1) ;; 关闭光标闪动
+(setq visible-cursor nil)
+(setopt cursor-in-non-selected-windows nil)
 
 (global-display-line-numbers-mode t) ;; 显示行号
 (setq display-line-numbers-type 'relative)
