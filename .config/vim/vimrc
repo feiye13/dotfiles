@@ -1,3 +1,4 @@
+set nocompatible
 let mapleader=' '
 
 syntax on
@@ -8,10 +9,6 @@ set relativenumber
 
 set encoding=utf-8
 
-set nocompatible
-filetype on
-filetype indent on
-filetype plugin on
 filetype plugin indent on
 
 set hlsearch
@@ -27,7 +24,7 @@ set softtabstop=4
 
 set scrolloff=7
 
-nnoremap <leader>w :w<CR>
+set termguicolors
 
 inoremap <C-p> <Up>
 inoremap <C-n> <Down>
