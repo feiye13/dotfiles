@@ -37,8 +37,8 @@
 (auto-save-visited-mode t)
 (electric-pair-mode t) ; 括号补全
 (show-paren-mode t) ; 括号匹配提示
-
 (editorconfig-mode t)
+(windmove-default-keybindings)
 
 ;; dired
 (use-package dired

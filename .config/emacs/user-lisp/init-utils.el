@@ -5,6 +5,8 @@
 
 ;; Meow
 (use-package meow
+  :custom
+  (meow-use-clipboard t)
   :config
   (meow-setup)
 
