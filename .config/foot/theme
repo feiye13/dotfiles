@@ -1,38 +1,27 @@
-# _*_ conf _*_
-# Catppuccin Frappe
+# -*- conf -*-
+# modus-operandi
 
-[colors-dark]
-foreground=c6d0f5
-background=303446
+[main]
+initial-color-theme=light
 
-regular0=51576d
-regular1=e78284
-regular2=a6d189
-regular3=e5c890
-regular4=8caaee
-regular5=f4b8e4
-regular6=81c8be
-regular7=b5bfe2
+[colors-light]
+background=ffffff
+foreground=000000
+regular0=000000
+regular1=a60000
+regular2=005e00
+regular3=813e00
+regular4=0031a9
+regular5=721045
+regular6=00538b
+regular7=bfbfbf
+bright0=595959
+bright1=972500
+bright2=315b00
+bright3=70480f
+bright4=2544bb
+bright5=5317ac
+bright6=005a5f
+bright7=ffffff
 
-bright0=626880
-bright1=e78284
-bright2=a6d189
-bright3=e5c890
-bright4=8caaee
-bright5=f4b8e4
-bright6=81c8be
-bright7=a5adce
-
-cursor=232634 f2d5cf
-
-16=ef9f76
-17=f2d5cf
-
-selection-foreground=c6d0f5
-selection-background=4f5369
-
-search-box-no-match=232634 e78284
-search-box-match=c6d0f5 414559
-
-jump-labels=232634 ef9f76
-urls=8caaee
+jump-labels=dce0e8 0000ff

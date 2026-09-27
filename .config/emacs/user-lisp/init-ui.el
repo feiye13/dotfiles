@@ -22,12 +22,12 @@
 (setq redisplay-skip-fontification-on-input t)
 
 ;; Theme
-(use-package catppuccin-theme
-  :config
-  (setq catppuccin-flavor 'frappe)
-  (if (daemonp)
-      (add-hook 'server-after-make-frame-hook #'catppuccin-reload)
-    (load-theme 'catppuccin :no-confirm)))
+(if (daemonp)
+    (add-hook 'after-make-frame-functions
+              (lambda (frame)
+                (with-selected-frame frame
+                  (load-theme 'modus-operandi t))))
+  (load-theme 'modus-operandi t))
 
 ;; modeline
 (use-package doom-modeline
