@@ -12,6 +12,8 @@
 (setq display-line-numbers-type 'relative)
 ;; (global-hl-line-mode t) ;; 高亮光标所在行
 
+(add-to-list 'default-frame-alist '(alpha-background . 90))
+
 ;; Font
 (add-hook 'emacs-startup-hook
           (lambda ()
