@@ -15,11 +15,9 @@
 (add-to-list 'default-frame-alist '(alpha-background . 90))
 
 ;; Font
-(add-hook 'emacs-startup-hook
-          (lambda ()
-            (custom-set-faces
-             '(default ((t (:family "LXGW WenKai Mono" :height 160 :weight Medium))))
-             )))
+(set-face-attribute 'default nil
+                    :family "Sarasa Mono SC"
+                    :height 160)
 
 (setq redisplay-skip-fontification-on-input t)
 
