@@ -4,6 +4,7 @@
 ;;; Code:
 
 (use-package corfu
+  :ensure t
   :hook
   ((prog-mode . corfu-mode)
    (shell-mode . corfu-mode)
@@ -26,6 +27,7 @@
   (setq eglot-ignored-server-capabilities '(:inlayHintProvider)))
 
 (use-package yasnippet
+  :ensure t
   :init
   (yas-global-mode 1))
 

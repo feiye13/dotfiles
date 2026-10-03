@@ -15,8 +15,6 @@
 (when (not package-archive-contents)
   (package-refresh-contents))
 
-(setq use-package-always-ensure t)
-
 (advice-add 'vc-git-clone :around
             'my/vc-git-clone)
 
