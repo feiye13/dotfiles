@@ -14,8 +14,6 @@
   :bind
   ;; MOTION state
   (:map meow-motion-state-keymap
-        ("j" . meow-next)
-        ("k" . meow-prev)
         ("<escape>" . ignore))
   ;; Leader keys, also reachable via SPC in Meow (`mode-specific-map' is C-c)
   (:map mode-specific-map
