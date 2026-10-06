@@ -5,6 +5,8 @@
 
 (use-package emacs
   :ensure nil
+  :bind (("C-S-c" . kill-ring-save)
+         ("C-S-v" . yank))
   :init
   (setq make-backup-files nil)
   (setq auto-save-default nil) ; 关闭自动保存，不会生成以 '~' 结尾的文件
