@@ -19,8 +19,6 @@
                     :family "Sarasa Mono SC"
                     :height 160)
 
-(setq redisplay-skip-fontification-on-input t)
-
 ;; Theme
 (if (daemonp)
     (add-hook 'after-make-frame-functions

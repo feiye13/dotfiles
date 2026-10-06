@@ -3,34 +3,24 @@
 
 ;;; Code:
 
-;; 增加 IO 性能
-(setq process-adaptive-read-buffering nil)
-(setq read-process-output-max (* 1024 1024))
-
-;; 对大文件或超长行提供性能优化
-(setq-default bidi-display-reordering nil)
-(setq-default bidi-paragraph-direction 'left-to-right)
-(setq bidi-inhibit-bpa t
-      long-line-threshold 1000
-      large-hscroll-threshold 1000
-      syntax-wholeline-max 1000)
-
-(setq make-backup-files nil)
-(setq auto-save-default nil) ; 关闭自动保存，不会生成以 '~' 结尾的文件
-
-(setq-default indent-tabs-mode nil) ; only use spaces instead of TAB, use C-q TAB to input the TAB char
-(setq-default tab-width 4) ; make tab-width always 4
-
-(setq inhibit-startup-screen t)
-(setq use-short-answers t) ; 用 y/n 代替 yes/no
-(setq mouse-yank-at-point t) ; 粘贴于光标处,而不是鼠标指针处
-(setq x-select-enable-clipboard t) ; 支持 emacs 和外部程序的粘贴
-(setq inhibit-compacting-font-caches t) ; 使用字体缓存，避免卡顿
-(setq confirm-kill-processes nil) ; 退出自动杀掉进程
-(setq word-wrap-by-category t) ;按照中文折行
-
-(setq scroll-margin 5)
-(setq scroll-conservatively 10000)
+(use-package emacs
+  :ensure nil
+  :init
+  (setq make-backup-files nil)
+  (setq auto-save-default nil) ; 关闭自动保存，不会生成以 '~' 结尾的文件
+  (setq inhibit-startup-screen t)
+  (setq use-short-answers t) ; 用 y/n 代替 yes/no
+  (setq mouse-yank-at-point t) ; 粘贴于光标处,而不是鼠标指针处
+  (setq select-enable-clipboard t) ; 支持 emacs 和外部程序的粘贴
+  (setq inhibit-compacting-font-caches t) ; 使用字体缓存，避免卡顿
+  (setq redisplay-skip-fontification-on-input t)
+  (setq confirm-kill-processes nil) ; 退出自动杀掉进程
+  (setq word-wrap-by-category t) ;按照中文折行
+  (setq scroll-margin 5)
+  (setq scroll-conservatively 10000)
+  :config
+  (setq-default indent-tabs-mode nil) ; only use spaces instead of TAB, use C-q TAB to input the TAB char
+  (setq-default tab-width 4))
 
 (delete-selection-mode t) ; 输入字符替换选中的文本
 (global-auto-revert-mode t) ; 读取文件在 Emacs 外的修改
