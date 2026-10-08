@@ -170,5 +170,9 @@
   :config
   (add-to-list 'ghostel-eval-cmds '("magit-status-setup-buffer" magit-status-setup-buffer)))
 
+(use-package markdown-ts-mode
+  :ensure nil
+  :mode ("\\.md\\'" . markdown-ts-mode))
+
 (provide 'init-utils)
 ;;; init-utils.el ends here
