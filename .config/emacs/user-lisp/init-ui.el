@@ -8,11 +8,11 @@
 (setq visible-cursor nil)
 (setopt cursor-in-non-selected-windows nil)
 
-(global-display-line-numbers-mode t) ;; 显示行号
-(setq display-line-numbers-type 'relative)
+;; (global-display-line-numbers-mode t) ;; 显示行号
+;; (setq display-line-numbers-type 'relative)
 ;; (global-hl-line-mode t) ;; 高亮光标所在行
 
-(add-to-list 'default-frame-alist '(alpha-background . 90))
+;; (add-to-list 'default-frame-alist '(alpha-background . 90))
 
 ;; Font
 (set-face-attribute 'default nil
