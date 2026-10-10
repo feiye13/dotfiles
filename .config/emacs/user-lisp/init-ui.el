@@ -30,7 +30,21 @@
 ;; modeline
 (use-package doom-modeline
   :ensure t
-  :init (doom-modeline-mode 1))
+  :init
+  ;; 显示时间和光标行号
+  (setq doom-modeline-time t
+        doom-modeline-enable-buffer-position t
+        doom-modeline-position-line-format '("L%l")
+        doom-modeline-position-column-line-format '("L%l"))
+
+  (doom-modeline-mode 1)
+  :config
+  ;; 使用 24 小时制，只显示时间
+  (setq display-time-24hr-format t
+        display-time-day-and-date nil)
+
+  (display-time-mode 1)
+  (line-number-mode 1))
 
 (provide 'init-ui)
 ;;; init-ui.el ends here
